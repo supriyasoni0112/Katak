@@ -1,0 +1,149 @@
+*{box-sizing: border-box;}
+img{max-width: 100%;}
+.border{width:85%; margin:auto; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        color: gainsboro; }
+/*section1*/
+.flex1{display:flex; flex-wrap: wrap;
+         color:darkslategray;
+         justify-content: space-between;
+         padding-top: 30px;
+         padding-bottom: 30px;}
+header{ font-size: 3rem;
+         padding-right: 450px;}
+header::first-letter  {color:orangered}
+#about{background: orangered;
+         border-radius: 50%;
+         padding-top: 25px;
+         width: 50px;
+         color: white;
+         text-align: center;}
+.content{padding-top:25px}
+/*section2*/
+.flex2{display: flex; flex-wrap: wrap; 
+        padding-top: 30px;
+        padding-bottom: 30px; }
+.flex2 div img{height:400px; 
+        width: 180px;} 
+.flex2 .lastimg{margin: 0px;
+         width:550px}
+/*section*/
+.flex3{display: flex; flex-wrap: wrap;
+         justify-content: space-between;
+         padding-top: 20px;
+         padding-bottom: 20px;}
+.flex3 div h1::first-letter{ color: orangered;}
+.flex3 div h1{font-size: 3rem;
+         font-weight: lighter;
+         margin-top: 0px;
+         padding-top: 10px;}
+.para{border-left:solid gainsboro 3px; padding-right: 160px; padding-left: 30px;}
+/*section3*/
+.flex4{display: flex; flex-wrap: wrap;
+        padding-top: 30px; 
+        padding-bottom: 30px; 
+        height:500px; 
+        justify-content: space-between;}
+.flex4 div{width:300px; 
+        height:200px}
+.flex4 h3{font-size: 1.75rem; font-weight: lighter;}
+.flex4 div p{color:rgb(205, 205, 205);}
+.flex4 button{background: orangered; 
+        color: whitesmoke; 
+        padding: 8px; 
+        margin-top: 5px; 
+        font-weight: 600; 
+        padding-left: 15px;  
+        padding-right: 15px;}
+/*section4*/
+.flex6 .meimg{width:280px; height:400px}
+.flex5,.flex6, .flex7, .flex8 {display: flex; flex-wrap: wrap; }
+.aboutme{padding-left: 30px; 
+        padding-right: 60px; padding-top:90px}
+.flex6 h3{font-size: 1.75rem; 
+        font-weight: lighter; 
+        margin-bottom: 30px;}
+.flex8 div{width: 150px; 
+        padding-right:20px;
+        padding-bottom: 20px;}
+.flex7 ul li {color: orangered; padding-bottom: 15px;}
+/*section5*/
+.flex9 {display: flex; flex-wrap: wrap; 
+        justify-content: space-between; 
+        padding-bottom: 30px;
+        padding-top: 40px;}
+.copyright{color:darkslategray; padding-right: 75%;}
+.flex9 i{font-size: 1.50rem; 
+        color:white; 
+        background: orangered; 
+        border-radius: 50%; 
+        padding: 5px; 
+        margin-left: 20px;}
+
+
+        @media only screen and (max-width:768px){
+                .border{width:95%;
+                         text-align: center;
+                        font-size: small;}
+                 header{padding-right: 10px;
+                         font-size:2rem ;}
+                 #about{width:auto; 
+                        font-size: small;}
+                 .content{font-size: small;}
+                 #container{width: 100%;}
+                 .flex2 div img{display: none;}
+                 .flex2 .lastimg{display: block;
+                                height: 400px;}
+                .flex2{width:100%;}
+                .flex2 div img{height:200px; 
+                        width: 60px;}
+                .flex3{display: block;}        
+                .flex3 .para{border:none;
+                        padding: 0px;
+                }     
+                .flex4 {height:900px;}
+                .flex4 div{width:50%;
+                            padding: 10px;}
+                .flex6 .aboutme, .flex6 .short{ width:80%; 
+                        margin: auto;}
+                .flex6 .aboutme{padding:0px;
+                        font-size: medium;
+                        padding-top: 10px;
+                }
+                .flex6 .meimg{ height:300px}
+                .flex7{justify-content: space-around;}
+                .flex8 div{width:50%}
+                .copyright{display: none;}
+        }
+@media only screen and (max-width:576px){
+        .border{width:95%;
+                 text-align: center;
+                font-size: small;}
+         header{padding-right: 10px;
+                 font-size:2rem ;}
+         #about{width:auto; 
+                font-size: small;}
+         .content{font-size: small;}
+         #container{width: 100%;}
+         .flex2 div img{display: none;}
+         .flex2 .lastimg{display: block;
+                        height: 300px;}
+        .flex2{width:100%;}
+        .flex2 div img{height:200px; 
+                width: 60px;}
+        .flex3{display: block;}        
+        .flex3 .para{border:none;
+                padding: 0px;
+        }     
+        .flex4 {height:2300px;}
+        .flex4 div{width:100%;}
+        .flex6 .aboutme, .flex6 .short{ width:80%; 
+                margin: auto;}
+        .flex6 .aboutme{padding:0px;
+                font-size: medium;
+                padding-top: 10px;
+        }
+        .flex6 .meimg{ height:300px}
+        .flex8 div{width:50%}
+        .copyright{padding-bottom:50px}
+}
+

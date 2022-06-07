@@ -1,0 +1,211 @@
+*{box-sizing: border-box;}
+img{max-width: 100%;}
+.border{width:85%; margin:auto; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        color: gainsboro; }
+/*section1*/
+.grid1{display: grid; 
+        grid-template-columns:50% 10% 10% 10% 10% 10% ;  
+        color:darkslategray; 
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;}
+header{ font-size: 3rem;
+        padding-right: 450px;}
+header::first-letter  {color:orangered}
+#about{background: orangered; 
+        border-radius: 50%; 
+        padding-top: 25px;
+        width: 50px; 
+        color: white;
+        text-align: center;}
+.content{padding-top:25px}
+/*section2*/
+.grid2{display: grid; 
+        grid-template-columns: 15% 15% 15% 15% 40%; 
+        padding-top: 30px;
+        padding-bottom: 30px; }
+.grid2 div img{height:400px; } 
+#lastimg{margin: 0px; 
+        width:550px}
+/*section*/
+.grid3{display: grid; 
+        grid-template-columns: 30% 70%}
+.grid3 div h1::first-letter{ color: orangered;}
+.grid3 div h1{font-size: 3rem; 
+        font-weight: lighter;
+        margin-top: 0px; 
+        padding-top: 10px;}
+.para{border-left:solid gainsboro 2px; 
+        padding-right: 180px; 
+        padding-left: 30px; 
+        margin-bottom: 10px; 
+        padding-top: 0px;}
+/*section3*/
+.grid4{display: grid; 
+        grid-template-columns:auto auto auto auto; 
+        height:500px}
+.grid4 div{width:300px; 
+        height:200px}
+.grid4 h3{font-size: 1.75rem; 
+        font-weight: lighter;}
+.grid4 div p{color:rgb(205, 205, 205);}
+.grid4 button{background: orangered; 
+        color: whitesmoke; 
+        padding: 8px; 
+        margin-top: 5px; 
+        font-weight: 600; 
+        padding-left: 15px;  
+        padding-right: 15px;}
+/*section4*/
+.meimg{height:400px}
+.bg{ background: rgba(0, 0, 0, 0.811);padding-top: 50px; padding-bottom: 50px;}
+.grid5{display: grid; grid-template-columns: 50% 50%}
+.grid6{display: grid; grid-template-columns: auto auto}
+.grid7{display: grid; grid-template-columns: auto auto}
+.grid8{display: grid; grid-template-columns: auto auto auto auto; 
+        grid-template-rows: auto auto auto ; }
+.grid6 div{width:280px}
+.grid7 div{width:150px}
+.aboutme{padding-left: 10px;  
+        padding-top:90px}
+.grid5 h3{font-size: 1.75rem; 
+        font-weight: lighter; 
+        margin-bottom: 30px;}
+.grid8 div{width: 150px; 
+        padding-right:20px;
+        padding-bottom: 20px;}
+.grid7 ul li {color: orangered; 
+        padding-bottom: 15px;}
+ul{ padding-left: 0px;}
+/*section5*/
+.grid9 {display: grid; grid-template-columns: 80% 5% 5% 5% 5%; 
+        justify-content: space-between; 
+        padding-bottom: 30px;
+        padding-top: 40px;}
+.copyright{color:darkslategray; padding-right: 75%;}
+.grid9 i{font-size: 1.50rem; 
+        color:white; 
+        background: orangered; 
+        border-radius: 50%; 
+        padding: 5px; 
+        margin-left: 20px;}
+
+
+@media only screen and (max-width:1315px){
+                .grid1{text-align: left;
+                        grid-template-columns:35% 13% 13% 13% 13% 13%;
+                       }
+                header{font-size: 2rem;
+                        padding: 0px;
+                        padding-top: 20px;
+                        }
+                .content, #about{font-size: large; 
+                            text-align: center;
+                            }
+                #about{width: 54px;}            
+                .border{width:95%; 
+                        font-size: large;
+                        text-align: center;}
+                .grid4{grid-template-columns: 50% 50%; 
+                        gap:10px 10px;
+                        padding:10px;
+                        height: 1255px}   
+                .grid4 div{width: auto;}  
+                .grid6{grid-template-columns: auto;}
+                .grid5{grid-template-columns: 40% 60%;}
+                .grid6 .aboutme{padding-top: 0px}
+                .grid8{grid-template-columns: auto auto auto;
+                        grid-template-rows: auto auto auto auto;
+                }
+                .grid8 div{width:200px;
+                        padding: 10px;         
+                }     
+                .h3{padding-bottom: 60px;}
+}
+
+@media only screen and (max-width:950px){
+        .grid1{text-align: left;
+                grid-template-columns:35% 13% 13% 13% 13% 13%;
+               }
+        header{font-size: 2rem;
+                padding: 0px;
+                padding-top: 20px;
+                }
+        .content, #about{font-size: small; 
+                    text-align: center;
+                    }
+        .border{width:95%; 
+                font-size: small;
+                text-align: center;}
+        .grid3{display: grid;
+                 grid-template-columns: 100%;
+                 text-align: center;}
+        .grid3 div h1{
+                font-size: 2rem;
+                padding-top: 0px;
+        }         
+        .para{padding: 0px;
+               border:none;
+        
+        }         
+        .grid4{grid-template-columns: 50% 50%; 
+                gap:10px 10px;
+                padding:10px;
+                height: 1000px}   
+        .grid4 div{width: auto;}  
+        .grid5{grid-template-columns: auto;}
+        .grid6{grid-template-columns: 48% 52%;}
+        .meimg{height: 250px;}
+        .bg {padding: 0px;}
+        .grid6{margin: auto;}
+        .grid6 .aboutme{padding-top: 90px}
+        .grid7{margin-left: -25px;
+            }
+        .grid8{grid-template-columns: auto auto auto auto;
+              }
+        .grid8 div{width: auto;}      
+        .grid9{grid-template-columns: 56% 11% 11% 11% 11% ;}
+        }
+
+        @media only screen and (max-width:576px){
+                .grid1{text-align: left;
+                        grid-template-columns:35% 13% 13% 13% 13% 13%;
+                       }
+                header{font-size: 2rem;
+                        padding: 0px;
+                        padding-top: 20px;
+                        }
+                .content, #about{font-size: small; 
+                            text-align: center;
+                            }
+                .border{width:95%; 
+                        font-size: small;
+                        text-align: center;}
+                .grid3{display: grid;
+                         grid-template-columns: 100%;
+                         text-align: center;}
+                .grid3 div h1{
+                        font-size: 2rem;
+                        padding-top: 0px;
+                }         
+                .para{padding: 0px;
+                       border:none;
+                
+                }         
+                .grid4{grid-template-columns: 50% 50%; 
+                        gap:10px 10px;
+                        padding:10px;
+                        height: 800px}   
+                .grid4 div{width: auto;}  
+                .grid6, .grid5{grid-template-columns: auto;}
+                .meimg{height: 250px;}
+                .bg {padding: 0px;}
+                .grid6{margin: auto;}
+                .grid6 .aboutme{padding: 20px}
+                .grid7{margin-left: -25px;
+                    }
+                .grid8{grid-template-columns: auto auto auto auto;
+                      }
+                .grid8 div{width: auto;}      
+                .grid9{grid-template-columns: 56% 11% 11% 11% 11% ;}
+                }
